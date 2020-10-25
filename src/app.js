@@ -15,7 +15,7 @@ function showCity(event) {
 
 axios.get(apiUrl).then(function (response) {
     console.log(response.data.main.temp);
-    temperature.innerHTML = response.data.main.temp;
+    temperature.innerHTML = Math.round(response.data.main.temp);
     description.innerHTML = response.data.weather[0].main;
     humidity.innerHTML = response.data.main.humidity;
     wind.innerHTML = response.data.wind.speed;
@@ -51,7 +51,7 @@ function showPosition(position) {
     axios.get(lApiUrl).then(function (response) {
         
     h1.innerHTML = response.data.name;  
-    temperature.innerHTML = response.data.main.temp;
+    temperature.innerHTML = Math.round(response.data.main.temp);
     description.innerHTML = response.data.weather[0].main;
     humidity.innerHTML = response.data.main.humidity;
     wind.innerHTML = response.data.wind.speed;
