@@ -11,6 +11,12 @@ h1 {
   text-transform: capitalize;
 }
 
+p {
+  font-family: monospace;
+  color: gray;
+  text-align: center;
+}
+
 ul {
   margin: 0 0 10px;
   padding: 0;
